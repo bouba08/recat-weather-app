@@ -6,9 +6,11 @@ import clouds from  "./images/clouds.jpeg"
 import mist from "./images/mist.png"
 
 
+
+
 const Weather =  () => {
-    const [data, setData] = useState("")
-    const [input, setInput] = useState("london")
+    const [data, setData] = useState('')     
+    const [input, setInput] = useState('london')
     const [inpVal, setInpVal] = useState(null)
     
         
@@ -29,7 +31,7 @@ const Weather =  () => {
     const handleSubmit = (e) => {
         e.preventDefault()
         setInpVal(...input)
-        setInput("")    
+        setInput('')    
     }
 
     useEffect(()=>{
@@ -56,22 +58,36 @@ const Weather =  () => {
             className="input"/>
             <button className="button" onClick={fetchData}>Weather</button>
             </form>
-
             {inpVal && <div className="info">
-            <h2 className="info-subtitle">{data.name} weather: {data.weather[0].main}</h2>
-            <img width="234px"height= "150px" className="info-img" src={weather[data.weather[0].main]}></img>                
-            <span className="info-span">Description: {data.weather[0].description}</span>
-            <span className="info-span">Temperature: {data.main.temp}°C</span>
-            <span className="info-span">Max temperature: {data.main.temp_max}°C</span>
-            <span className="info-span">Min temperature: {data.main.temp_min}°C</span>
-            <span className="info-span">Humidity: {data.main.humidity}%</span>
-            <span className="info-span">Wind speed: {data.wind.speed}mph</span>
-            </div>}            
+          <h2 className="info-subtitle">
+            {data.name} weather: {data.weather[0].main}
+          </h2>
+          <img
+            width="234px"
+            height="150px"
+            className="info-img"
+            src={weather[data.weather[0].main]}
+            alt=""
+          ></img>
+          <span className="info-span">
+            Description: {data.weather[0].description}
+          </span>
+          <span className="info-span">Temperature: {data.main.temp}°C</span>
+          <span className="info-span">
+            Max temperature: {data.main.temp_max}°C
+          </span>
+          <span className="info-span">
+            Min temperature: {data.main.temp_min}°C
+          </span>
+          <span className="info-span">Humidity: {data.main.humidity}%</span>
+          <span className="info-span">Wind speed: {data.wind.speed}mph</span>
+        </div>
+    }
+            
         </div>
         </div>
-    )
     
-}
+   )}
 
 
-export default Weather
+export default Weather 
