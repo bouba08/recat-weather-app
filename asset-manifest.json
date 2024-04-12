@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.fe277428.css",
-    "main.js": "/react-gh-pages/static/js/main.8b952473.js",
-    "static/media/mist.png": "/react-gh-pages/static/media/mist.b7eae4d9b17f9b27f33e.png",
-    "static/media/rain.jpg": "/react-gh-pages/static/media/rain.88974eece0549040aa2d.jpg",
-    "index.html": "/react-gh-pages/index.html",
-    "main.fe277428.css.map": "/react-gh-pages/static/css/main.fe277428.css.map",
-    "main.8b952473.js.map": "/react-gh-pages/static/js/main.8b952473.js.map"
+    "main.css": "/react-weather-app/static/css/main.fe277428.css",
+    "main.js": "/react-weather-app/static/js/main.63746c9e.js",
+    "static/media/mist.png": "/react-weather-app/static/media/mist.b7eae4d9b17f9b27f33e.png",
+    "static/media/rain.jpg": "/react-weather-app/static/media/rain.88974eece0549040aa2d.jpg",
+    "index.html": "/react-weather-app/index.html",
+    "main.fe277428.css.map": "/react-weather-app/static/css/main.fe277428.css.map",
+    "main.63746c9e.js.map": "/react-weather-app/static/js/main.63746c9e.js.map"
   },
   "entrypoints": [
     "static/css/main.fe277428.css",
-    "static/js/main.8b952473.js"
+    "static/js/main.63746c9e.js"
   ]
 }
